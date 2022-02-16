@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tg_notice_bg"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+
+            <TextView
+                android:id="@+id/tg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/tg_view_darkexit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tg_df_content_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tg_df_lr_padding"
+        android:paddingRight="@dimen/tg_df_lr_padding" >
+
+        <TextView
+            android:id="@+id/tg_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/tg_layout_notenough_kb"
+            android:textColor="#666666"
+            android:textSize="@dimen/tg_df_title_textsize" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" >
+
+            <TextView
+                android:id="@+id/tg_amount_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/tg_layout_amount_desc"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+
+            <TextView
+                android:id="@+id/tg_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/tg_amount_hint"
+                android:text="1"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+
+            <TextView
+                android:id="@+id/tg_balance_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/tg_amount_hint"
+                android:layout_below="@+id/tg_amount_hint"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:text="@string/tg_layout_balance_desc"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+
+            <TextView
+                android:id="@+id/tg_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tg_balance_hint"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/tg_balance_hint"
+                android:text="2"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tg_kb_recharge"
+            style="@style/tg_black_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/tg_layout_goto_recharge_kb" />
+    </LinearLayout>
+
+</LinearLayout>

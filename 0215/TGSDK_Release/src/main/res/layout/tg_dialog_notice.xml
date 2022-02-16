@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tg_notice_bg"
+    android:clipChildren="true"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/tg_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tg_notice_title_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+        </LinearLayout>
+
+        <include layout="@layout/tg_view_darkexit_corner" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tg_title_layout"
+        android:background="@null"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tg_df_lr_padding"
+        android:paddingRight="@dimen/tg_df_lr_padding" >
+
+        <TextView
+            android:id="@+id/tg_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="Notice Description"
+            android:textColor="@color/tg_df_common_textcolor"
+            android:textSize="@dimen/tg_df_title_textsize" />
+
+        <TextView
+            android:id="@+id/tg_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="@string/tg_layout_goto_noticecenter"
+            android:textColor="#0084FF"
+            android:textSize="@dimen/tg_df_title_textsize" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" >
+
+            <CheckBox
+                android:id="@+id/tg_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/tg_checkbox" />
+
+            <TextView
+                android:id="@+id/tg_checkbox_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tg_checkbox"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tg_checkbox"
+                android:text="@string/tg_layout_notshow_nexttime"
+                android:textColor="@color/tg_df_common_textcolor"
+                android:textSize="@dimen/tg_df_title_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

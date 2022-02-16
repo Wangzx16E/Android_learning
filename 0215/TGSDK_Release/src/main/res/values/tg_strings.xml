@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tg_account_blank">Username cannot be left blank</string>
+	<string name="tg_account_format_incorrect">Invalid Username.Username must be 6-20 characters long.(Letters and Numbers only)</string>
+	<string name="tg_password_blank">Password is required</string>
+	<string name="tg_password_format_incorrect">Invalid Password.Password must be 6-20 characters long.(Letters and Numbers only)</string>
+	<string name="tg_nickname_blank">User ID cannot be left blank</string>
+	<string name="tg_nickname_format_incorrect">Invalid Name</string>
+	<string name="tg_email_blank">An Email is required to create an account</string>
+	<string name="tg_email_format_incorrect">Invalid email</string>
+	<string name="tg_new_password_unmatch">Passwords do not match</string>
+	<string name="tg_new_password_not_change">Old password and new password cannot be the same</string>
+	<string name="tg_network_token_invalid">Login Failed, Please Try to Login Again</string>
+	<string name="tg_network_unknown_error">Unknown Error</string>
+	<string name="tg_network_not_available">No Internet Connection</string>
+	<string name="tg_network_timed_out">Internet Connection Timed Out</string>
+	<string name="tg_network_parse_json_error">Server Error: JSON Parse</string>
+	<string name="tg_network_unknown_server_error">Unknown Network Error:</string>
+	<string name="tg_network_unknown_client_error">Unknown Client Error:</string>
+	<string name="tg_network_loading_loading">Connecting…</string>
+	<string name="tg_network_loading_login">Logging in…</string>
+	<string name="tg_network_loading_pay">Processing…</string>
+	<string name="tg_network_loading_register">Creating new account…</string>
+	<string name="tg_please_accept_agreement">Please Accept User Agreement</string>
+	<string name="tg_layout_loginhint">Welcome Back!</string>
+	<string name="tg_chooseimg_sizeerror">Image size cannot exceed 3MB</string>
+	<string name="tg_chooseimg_failed">Image upload failed</string>
+	<string name="tg_invite_success">Invite Successful</string>
+	<string name="tg_invite_fail">Invite Failed</string>
+	<string name="tg_recharge_kb_success">K Coin Top-Up Successful</string>
+	<string name="tg_recharge_kb_failed">K Coin Top-Up Failed</string>
+	<string name="tg_checkupdate_title">Check for Update</string>
+	<string name="tg_checkupdate_message">New Version Available, Click to Open Download Link in Browser</string>
+	<string name="tg_checkupdate_btn">Check</string>
+	<string name="tg_payment_btn">Payment</string>
+	<string name="tg_next_btn">Next</string>
+	<string name="tg_submit_btn">Submit</string>
+</resources>

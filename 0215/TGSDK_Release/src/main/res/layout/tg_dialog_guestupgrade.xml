@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/tg_back"
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tg_diaog_back"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tg_layout_binding"
+            android:textColor="@color/vk_black"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/tg_df_lr_padding"
+            android:paddingRight="@dimen/tg_df_lr_padding"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical"
+                android:background="@drawable/tg_ed_background"
+                android:layout_height="wrap_content">
+
+                <ru.threeguns.ui.views.DropEditTextEx
+                    android:id="@+id/tg_account_et"
+                    style="@style/tg_account_et"
+                    android:layout_width="327dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    tuitui:hint="@string/tg_layout_account_email"
+                    tuitui:normalIcon="@drawable/tg_eticon_email"
+                    tuitui:selectedIcon="@drawable/tg_eticon_email"
+                    tuitui:imeActionLabel="@string/tg_layout_next"
+                    tuitui:imeOptions="5">
+
+                </ru.threeguns.ui.views.DropEditTextEx>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/tg_ed_background"
+                    android:layout_height="match_parent">
+                    <ru.threeguns.ui.views.DropEditTextEx
+                        android:id="@+id/tg_account_et_v"
+                        style="@style/tg_account_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        tuitui:hint="@string/tg_layout_verification"
+                        tuitui:imeActionLabel="@string/tg_layout_next"
+                        tuitui:imeOptions="5"
+                        tuitui:normalIcon="@drawable/tg_v_icon"
+                        tuitui:selectedIcon="@drawable/tg_v_icon" >
+                    </ru.threeguns.ui.views.DropEditTextEx>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/tg_send"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tg_layout_send"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tg_send_code"
+                    android:textColor="@color/vk_button_color"
+                    android:layout_height="30dp">
+
+                </Button>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tg_ed_background"
+                android:layout_height="wrap_content"
+                >
+                <ru.threeguns.ui.views.EditTextEx
+                    android:id="@+id/tg_password_et"
+                    style="@style/tg_secret_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    tuitui:hint="@string/tg_layout_password_hint"
+                    tuitui:imeActionLabel="@string/tg_layout_finish"
+                    tuitui:imeOptions="6"
+                    tuitui:normalIcon="@drawable/tg_eticon_password"
+                    tuitui:selectedIcon="@drawable/tg_eticon_password" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tg_ed_background"
+                android:layout_height="wrap_content"
+                >
+                <ru.threeguns.ui.views.EditTextEx
+                    android:id="@+id/tg_password_et_again"
+                    style="@style/tg_secret_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    tuitui:hint="@string/tg_layout_password_hint_again"
+                    tuitui:imeActionLabel="@string/tg_layout_finish"
+                    tuitui:imeOptions="6"
+                    tuitui:normalIcon="@drawable/tg_eticon_password"
+                    tuitui:selectedIcon="@drawable/tg_eticon_password" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tg_phonelogin"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tg_layout_phone_bind"
+                    android:textColor="#e33846"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tg_confirm_btn"
+                style="@style/tg_black_button"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/tg_layout_confirm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tg_af_lr_padding"
+                android:layout_marginRight="@dimen/tg_af_lr_padding"
+                android:layout_marginTop="32dp"
+                android:gravity="center|left"
+                android:layout_marginBottom="10dp"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_normal_textsize"
+                android:text="@string/tg_layout_upgrade_help" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

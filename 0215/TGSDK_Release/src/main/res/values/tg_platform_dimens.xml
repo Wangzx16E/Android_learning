@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tg_df_background">#FFFFFF</color>
+    <color name="tg_df_title_color">#eeeeee</color>
+    <color name="tg_df_title_btn_color">#2196f3</color>
+    <color name="tg_df_title_background">#232323</color>
+    <color name="tg_df_title_background_pressed">#444444</color>
+    <color name="tg_df_title_background_selected">#222222</color>
+    <color name="tg_df_content_background">#FFFFFF</color>
+    <color name="tg_df_common_textcolor">#999999</color>
+
+</resources>

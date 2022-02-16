@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/vk_white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/tg_search"
+            android:layout_width="match_parent"
+            style="@style/tg_rad_button"
+            android:textColor="@color/vk_white"
+            android:textColorHint="@color/vk_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/tg_layout_phone_choose_hint"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/tg_country_sv"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/tg_layout_phone_hot_country"
+                android:textColor="@color/vk_black"
+                android:textSize="16sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ru.threeguns.ui.views.ExpandableGridView
+                android:id="@+id/tg_hot_gv"
+                android:layout_width="match_parent"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="20dp"
+                android:layout_height="wrap_content">
+
+            </ru.threeguns.ui.views.ExpandableGridView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/tg_layout_phone_other_country"
+                android:textColor="@color/vk_black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ru.threeguns.ui.views.ExpandableGridView
+                android:id="@+id/tg_gv"
+                android:layout_width="match_parent"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="20dp"
+                android:layout_height="match_parent">
+
+            </ru.threeguns.ui.views.ExpandableGridView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/search_choose"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+            <ru.threeguns.ui.views.ExpandableGridView
+                android:id="@+id/tg_search_gv"
+                android:layout_width="match_parent"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="20dp"
+                android:layout_height="match_parent">
+
+            </ru.threeguns.ui.views.ExpandableGridView>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#CCCCCC"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_invitefriend"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/tg_view_darkexit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tg_notinstall_friends_btn"
+            style="@style/tg_dark_tab_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp"
+            android:text="@string/tg_layout_notinstalled_friend"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tg_installed_friends_btn"
+            style="@style/tg_dark_tab_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp"
+            android:text="@string/tg_layout_installed_friend"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tg_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/tg_progressbar_shape"
+            android:indeterminateOnly="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tg_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

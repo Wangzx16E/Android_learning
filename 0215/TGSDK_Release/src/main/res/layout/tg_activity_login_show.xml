@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/tg_fragment_show_container"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#00000000"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/tg_sdklogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tg_en_phone_login"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/tg_emlogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/tg_emlogin_icon"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/tg_fastlogin"
+                android:layout_width="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/tg_en_fast_login"
+                >
+
+            </ImageView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

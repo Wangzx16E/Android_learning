@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tg_toolbar_hide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tg_toolbar_hide_bg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/tg_toolbar_hide_rect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/tg_toolbar_hide_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/tg_hidehint_btn" />
+
+            <TextView
+                android:id="@+id/tg_toolbar_hide_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_hide_here" />
+            <!-- android:text="@string/tg_layout_hide_here" -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tg_toolbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/tg_toolbar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/tg_toolbar_img_layout"
+            android:layout_width="@dimen/tg_tb_size"
+            android:layout_height="@dimen/tg_tb_size"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/tg_toolbar_img"
+                android:layout_width="@dimen/tg_tb_size"
+                android:layout_height="@dimen/tg_tb_size"
+                android:src="@drawable/tg_toolbar_icon" />
+
+            <View
+                android:id="@+id/tg_toolbar_redhint"
+                android:layout_width="@dimen/tg_tb_redhint_size"
+                android:layout_height="@dimen/tg_tb_redhint_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/tg_redhint" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tg_toolbar_menu_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tg_tb_size"
+            android:layout_alignTop="@+id/tg_toolbar_img_layout"
+            android:layout_toRightOf="@+id/tg_toolbar_img_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/tg_usercenter_btn"
+                android:layout_width="@dimen/tg_tb_size"
+                android:layout_height="@dimen/tg_tb_size" >
+
+                <LinearLayout
+                    android:id="@+id/tg_usercenter_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/tg_usercenter_img"
+                        android:layout_width="@dimen/tg_tb_icon_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tg_toolbar_usercenter" />
+
+                    <TextView
+                        android:id="@+id/tg_usercenter_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/tg_layout_usercenter"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/tg_tb_hint_textsize" />
+                    <!-- android:text="@string/tg_layout_usercenter" -->
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/tg_usercenter_redhint"
+                    android:layout_width="@dimen/tg_tb_redhint_size"
+                    android:layout_height="@dimen/tg_tb_redhint_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/tg_redhint" />
+            </RelativeLayout>
+<!--
+            <ImageView
+                android:id="@+id/tg_toolbar_divider1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tg_toolbar_divider" />
+
+            <RelativeLayout
+                android:id="@+id/tg_feedback_btn"
+                android:layout_width="@dimen/tg_tb_size"
+                android:layout_height="@dimen/tg_tb_size" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/tg_feedback_img"
+                        android:layout_width="@dimen/tg_tb_icon_size"
+                        android:layout_height="@dimen/tg_tb_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tg_toolbar_feedback" />
+
+                    <TextView
+                        android:id="@+id/tg_feedback_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/tg_layout_supportcenter"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/tg_tb_hint_textsize" />
+                </LinearLayout>
+            </RelativeLayout>
+-->
+<!--
+            <ImageView
+                android:id="@+id/tg_toolbar_divider2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tg_toolbar_divider" />
+
+            <RelativeLayout
+                android:id="@+id/tg_gift_btn"
+                android:layout_width="@dimen/tg_tb_size"
+                android:layout_height="@dimen/tg_tb_size" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/tg_gift_img"
+                        android:layout_width="@dimen/tg_tb_icon_size"
+                        android:layout_height="@dimen/tg_tb_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tg_toolbar_gift" />
+
+                    <TextView
+                        android:id="@+id/tg_gift_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/tg_layout_giftcenter"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/tg_tb_hint_textsize" />
+                </LinearLayout>
+            </RelativeLayout>
+-->
+            <ImageView
+                android:id="@+id/tg_toolbar_divider3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tg_toolbar_divider" />
+
+            <RelativeLayout
+                android:id="@+id/tg_exit_btn"
+                android:layout_width="@dimen/tg_tb_size"
+                android:layout_height="@dimen/tg_tb_size" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/tg_exit_img"
+                        android:layout_width="@dimen/tg_tb_icon_size"
+                        android:layout_height="@dimen/tg_tb_icon_size"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/tg_toolbar_exit" />
+
+                    <TextView
+                        android:id="@+id/tg_exit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/tg_layout_exit"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/tg_tb_hint_textsize" />
+                    <!-- android:text="@string/tg_layout_exit" -->
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

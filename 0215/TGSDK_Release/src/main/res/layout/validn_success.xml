@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/tg_back"
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/tg_diaog_back"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tg_layout_findpwd"
+            android:textColor="@color/vk_black"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tg_df_content_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tg_df_lr_padding"
+        android:paddingRight="@dimen/tg_df_lr_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tg_ed_background"
+            android:layout_height="wrap_content"
+            >
+            <ru.threeguns.ui.views.EditTextEx
+                android:id="@+id/tg_password_et"
+                style="@style/tg_secret_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                tuitui:hint="@string/tg_layout_password_hint"
+                tuitui:imeActionLabel="@string/tg_layout_finish"
+                tuitui:imeOptions="6"
+                tuitui:normalIcon="@drawable/tg_eticon_password"
+                tuitui:selectedIcon="@drawable/tg_eticon_password" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tg_ed_background"
+            android:layout_height="wrap_content"
+            >
+            <ru.threeguns.ui.views.EditTextEx
+                android:id="@+id/tg_password_et_again"
+                style="@style/tg_secret_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                tuitui:hint="@string/tg_layout_password_hint_again"
+                tuitui:imeActionLabel="@string/tg_layout_finish"
+                tuitui:imeOptions="6"
+                tuitui:normalIcon="@drawable/tg_eticon_password"
+                tuitui:selectedIcon="@drawable/tg_eticon_password" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tg_confirm_btn"
+            style="@style/tg_black_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/tg_layout_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

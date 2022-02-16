@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <include layout="@layout/tg_view_darkback" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_findpwd"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/tg_view_darkexit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tg_df_content_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tg_df_lr_padding"
+        android:paddingRight="@dimen/tg_df_lr_padding" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tg_layout_restorepwd_success_hint"
+            android:textColor="#666666"
+            android:textSize="@dimen/tg_large_textsize" />
+
+        <TextView
+            android:id="@+id/tg_email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="test@test.com"
+            android:textColor="#333333"
+            android:textSize="@dimen/tg_large_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

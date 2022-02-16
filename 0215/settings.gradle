@@ -1,0 +1,2 @@
+include ':TGSDK_Release'
+include ':SDKDemo'

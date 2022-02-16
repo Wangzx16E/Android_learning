@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <include layout="@layout/tg_view_darkback" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_rules"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/tg_view_darkexit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tg_df_content_background"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/tg_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layerType="software" />
+    </LinearLayout>
+
+</LinearLayout>

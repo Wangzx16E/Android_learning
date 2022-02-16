@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/tg_hero_background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/tg_back_btn"
+                android:layout_width="20dp"
+                android:src="@drawable/tg_blackexit"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_height="20dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tg_layout_duole"
+                android:gravity="center"
+                android:textColor="@color/vk_black"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <View
+                android:id="@+id/tg_line1"
+                android:layout_width="wrap_content"
+                android:background="@drawable/tg_xuxian"
+                android:layout_below="@id/title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp">
+
+            </View>
+
+
+            <RelativeLayout
+                android:id="@+id/tg_alipay_img"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tg_line1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tg_alitext"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tg_layout_ali_pay"
+                    android:textColor="@color/vk_black"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/tg_hero_ali"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/tg_hero_tuijian"
+                    android:text="@string/tg_layout_ali_tuijian"
+                    android:textColor="@color/vk_white"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@id/tg_alitext"
+                    android:layout_alignTop="@id/tg_alitext"
+                    android:layout_marginLeft="30dp"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tg_alipay_choose"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/tg_hero_selected"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tg_alitext"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tg_line2"
+                android:layout_width="wrap_content"
+                android:background="@drawable/tg_xuxian"
+                android:layout_below="@id/tg_alipay_img"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp">
+
+            </View>
+            <RelativeLayout
+                android:id="@+id/tg_paypal_img"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tg_line2"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tg_paypaltext"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tg_layout_paypal"
+                    android:textColor="@color/vk_black"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/tg_hero_paypal"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/tg_hero_tuijian"
+                    android:text="@string/tg_layout_ali_tuijian"
+                    android:textColor="@color/vk_white"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@id/tg_paypaltext"
+                    android:layout_alignTop="@id/tg_paypaltext"
+                    android:layout_marginLeft="30dp"
+                    android:paddingRight="5dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/tg_paypal_choose"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/tg_hero_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tg_paypaltext"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </RelativeLayout>
+            <View
+                android:id="@+id/tg_line3"
+                android:layout_width="wrap_content"
+                android:background="@drawable/tg_xuxian"
+                android:layout_below="@id/tg_paypal_img"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp">
+
+            </View>
+            <RelativeLayout
+                android:id="@+id/tg_wxpay_img"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tg_line3"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tg_wxtext"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tg_layout_ali_wx"
+                    android:textColor="@color/vk_black"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/tg_hero_wechat"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/tg_wx_choose"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/tg_hero_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tg_wxtext"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tg_line4"
+                android:layout_width="wrap_content"
+                android:background="@drawable/tg_xuxian"
+                android:layout_below="@id/tg_wxpay_img"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp">
+
+            </View>
+            <RelativeLayout
+                android:id="@+id/tg_google_img"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tg_line4"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tg_googletext"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tg_layout_google"
+                    android:textColor="@color/vk_black"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/tg_hero_google"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/tg_google_choose"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/tg_hero_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tg_googletext"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </RelativeLayout>
+            <View
+                android:id="@+id/tg_line5"
+                android:layout_width="wrap_content"
+                android:background="@drawable/tg_xuxian"
+                android:layout_below="@id/tg_google_img"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="1dp">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tg_confirm_btn"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:textColor="@color/vk_white"
+                android:layout_below="@+id/tg_line5"
+                android:background="@drawable/tg_hero_sure"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/tg_payment_btn" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

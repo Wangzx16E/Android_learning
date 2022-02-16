@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <include layout="@layout/tg_view_darkback" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_title_feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_myfeedback"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ru.threeguns.ui.views.TGWebView
+        android:id="@+id/tg_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="software" />
+
+</LinearLayout>

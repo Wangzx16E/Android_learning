@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tg_account_blank">帳號不能為空</string>
+	<string name="tg_account_format_incorrect">帳號格式錯誤，需為6-15個數字或字母</string>
+	<string name="tg_password_blank">密碼不能為空</string>
+	<string name="tg_password_format_incorrect">密碼格式錯誤，需為6-15個數字或字母</string>
+	<string name="tg_nickname_blank">昵稱不能為空</string>
+	<string name="tg_nickname_format_incorrect">昵稱格式錯誤</string>
+	<string name="tg_email_blank">郵箱不能為空</string>
+	<string name="tg_email_format_incorrect">郵箱格式錯誤</string>
+	<string name="tg_new_password_unmatch">請確保兩次輸入的密碼一致</string>
+	<string name="tg_new_password_not_change">新密碼與舊密碼相同</string>
+	<string name="tg_network_token_invalid">登入狀態失效，請重新登入</string>
+	<string name="tg_network_unknown_error">未知錯誤</string>
+	<string name="tg_network_not_available">當前網絡不可用</string>
+	<string name="tg_network_timed_out">連接超時</string>
+	<string name="tg_network_parse_json_error">伺服器錯誤:格式錯誤</string>
+	<string name="tg_network_unknown_server_error">未知伺服器错误:</string>
+	<string name="tg_network_unknown_client_error">未知錯誤:</string>
+	<string name="tg_network_loading_loading">連接中…</string>
+	<string name="tg_network_loading_login">登入中…</string>
+	<string name="tg_network_loading_pay">儲值中...</string>
+	<string name="tg_network_loading_register">註冊中…</string>
+	<string name="tg_please_accept_agreement">請接受使用者協定</string>
+	<string name="tg_layout_loginhint">歡迎回來</string>
+	<string name="tg_chooseimg_sizeerror">圖片大小不能超過3M</string>
+	<string name="tg_chooseimg_failed">讀取圖片失敗</string>
+	<string name="tg_invite_success">邀請成功</string>
+	<string name="tg_invite_fail">邀請失敗</string>
+	<string name="tg_recharge_kb_success">儲值K幣成功</string>
+	<string name="tg_recharge_kb_failed">儲值K幣失敗</string>
+	<string name="tg_checkupdate_title">檢查更新</string>
+	<string name="tg_checkupdate_message">檢測到新版本,點擊前往瀏覽器下載.</string>
+	<string name="tg_checkupdate_btn">更新</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/vk_white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/tg_layout_load"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/vk_black"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:text="@string/tg_layout_copy2"
+            android:textColor="@color/vk_black"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:text="@string/tg_layout_cancel"
+            android:textColor="@color/vk_black"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

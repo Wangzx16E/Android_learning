@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <include layout="@layout/tg_view_darkback" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_title_usercenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_usercenter"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <ru.threeguns.ui.views.LayoutButton
+            android:id="@+id/tg_logout_btn"
+            android:layout_width="@dimen/tg_title_height"
+            android:layout_height="@dimen/tg_title_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tg_darkbtn" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:src="@drawable/tg_logout_btn" />
+        </ru.threeguns.ui.views.LayoutButton>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tg_account_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/tg_layout_account_hint"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/tg_normal_textsize" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tg_account_hint"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:id="@+id/tg_account_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/tg_account_hint"
+                    android:gravity="right|center_vertical"
+                    android:text="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/tg_normal_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/tg_nickname_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/tg_layout_nickname_hint"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/tg_normal_textsize"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tg_nickname_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/tg_nickname_hint"
+                    android:gravity="right|center_vertical"
+                    android:text="test123"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/tg_normal_textsize"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/tg_nickname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toLeftOf="@+id/tg_setnickname_btn"
+                    android:background="@drawable/tg_et_container_bg"
+                    android:imeActionLabel="@string/tg_layout_confirm"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="6dp"
+                    android:textSize="@dimen/tg_normal_textsize" />
+
+                <TextView
+                    android:id="@+id/tg_setnickname_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/tg_graybtn"
+                    android:padding="6dp"
+                    android:text="@string/tg_layout_setnickname"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/tg_normal_textsize" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tg_changenickname_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/tg_layout_change_nickname_hint"
+                android:textColor="#999999"
+                android:textSize="@dimen/tg_snormal_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:background="#eeeeee" />
+
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_upgrade_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_upgrade"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_changepw_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_changepwd"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+<!--
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_myfeedback_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_myfeedback"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+-->
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_notice_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tg_notice_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_notice"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <TextView
+                        android:id="@+id/tg_newnotice_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/tg_notice_text"
+                        android:background="@drawable/tg_redhint"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:text="New"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/tg_small_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tg_notice_text"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_wallet_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_wallet"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_fbfans_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_fbfans"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+
+            <ru.threeguns.ui.views.LayoutButton
+                android:id="@+id/tg_vkfans_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tg_whitebtn" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingBottom="14dp"
+                        android:paddingTop="14dp"
+                        android:text="@string/tg_layout_vkfans"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/tg_normal_textsize" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/tg_arrow" />
+            </ru.threeguns.ui.views.LayoutButton>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

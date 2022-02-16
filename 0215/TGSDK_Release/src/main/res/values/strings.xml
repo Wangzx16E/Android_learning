@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="game_app_name" tools:ignore="MissingTranslation">Guerra de Héroes</string>
+    <string name="facebook_app_id" translatable="false">460333488415050</string>
+    <string name="facebook_app_scheme" translatable="false">fb460333488415050</string>
+    <string name="BuglyAppId" translatable="false">8cad0e1db1</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tg_layout_account">用户名</string>
+	<string name="tg_layout_account_hint">用户名</string>
+	<string name="tg_layout_account_email">请输入邮箱</string>
+	<string name="tg_layout_account_phone">请输入手机号</string>
+	<string name="tg_layout_verification">请输入验证码</string>
+	<string name="tg_string_verification">验证码</string>
+	<string name="tg_layout_email_hint">邮箱</string>
+	<string name="tg_layout_email_register">邮箱注册</string>
+	<string name="tg_layout_phone_register">手机号注册</string>
+	<string name="tg_layout_phone_find">手机号找回</string>
+	<string name="tg_layout_email_find">邮箱找回</string>
+	<string name="tg_layout_email_bing">邮箱绑定</string>
+	<string name="tg_layout_phone_bind">手机号绑定</string>
+	<string name="tg_layout_phone_bind_login">手机号登陆</string>
+	<string name="tg_layout_nickname_hint">昵称</string>
+	<string name="tg_layout_send">发送</string>
+	<string name="tg_layout_vk_nickname_hint">VK昵称</string>
+	<string name="tg_layout_password">密码</string>
+	<string name="tg_layout_password_hint">密码</string>
+	<string name="tg_layout_password_notmatch">两次密码不一致</string>
+	<string name="tg_layout_password_hint_again">确认密码</string>
+	<string name="tg_layout_login">登录</string>
+	<string name="tg_layout_login_em">邮箱登录</string>
+	<string name="tg_layout_register">注册</string>
+	<string name="tg_layout_fast_register">一键注册</string>
+	<string name="tg_layout_fast_register_confirm">登录并保存截图</string>
+	<string name="tg_layout_fast_register_suiji">随机账号</string>
+	<string name="tg_layout_tplogin_text">其他方式登录:</string>
+	<string name="tg_layout_logintitle">3Guns</string>
+	<string name="tg_layout_findpwd">找回密码</string>
+	<string name="tg_layout_showpwd">显示密码</string>
+	<string name="tg_layout_exit">退出登录</string>
+	<string name="tg_layout_giftcenter">礼包</string>
+	<string name="tg_layout_supportcenter">客服中心</string>
+	<string name="tg_layout_feedbk">请输入您要反馈的问题</string>
+	<string name="tg_layout_usercenter">个人中心</string>
+	<string name="tg_layout_account2">账号</string>
+	<string name="tg_layout_switchuser">切换账号</string>
+	<string name="tg_layout_one_touch">一键生成</string>
+	<string name="tg_layout_restorepwd_success_hint">重置密码的链接已发送至您的邮箱:</string>
+	<string name="tg_layout_upgrade">升级为正式账号</string>
+	<string name="tg_layout_binding">绑定账号</string>
+	<string name="tg_layout_upgrade_title">升级为正式账号</string>
+	<string name="tg_layout_bind_hint">为了防止数据丢失,请进行数据绑定</string>
+	<string name="tg_layout_phone_choose_hint">查找:国家/地区名或区号</string>
+	<string name="tg_layout_phone_hot_country">——热门国家/地区——</string>
+	<string name="tg_layout_phone_other_country">——其他国家/地区——</string>
+	<string name="tg_layout_validn_null">验证码不能为空</string>
+	<string name="tg_layout_upgrade_help">Tips： 191game正式账号的优势有哪些？\n
+1.账号管理更加便捷与安全。\n
+2.方便参与官方举办的各类有奖活动。</string>
+	<string name="tg_layout_changepwd">修改密码</string>
+	<string name="tg_layout_changepwd_success">修改密码成功</string>
+	<string name="tg_layout_feedback">提问</string>
+	<string name="tg_layout_myfeedback">我的提问</string>
+	<string name="tg_layout_notice">消息中心</string>
+	<string name="tg_layout_noticedetail">通知详情</string>
+	<string name="tg_layout_fbfans">Facebook粉丝页</string>
+	<string name="tg_layout_vkfans">VK粉丝页</string>
+	<string name="tg_layout_wallet">我的钱包</string>
+	<string name="tg_layout_gift">领取礼包</string>
+	<string name="tg_layout_gift2">点击查看礼包详情</string>
+	<string name="tg_layout_lookgift">查看礼包</string>
+	<string name="tg_layout_copygift">复制礼包码</string>
+	<string name="tg_layout_copy">复制成功</string>
+	<string name="tg_layout_duole">游戏充值</string>
+	<string name="tg_layout_mygift">我的礼包</string>
+	<string name="tg_layout_setnickname">设置昵称</string>
+	<string name="tg_layout_oripwd">原密码</string>
+	<string name="tg_layout_newpwd">新密码</string>
+	<string name="tg_layout_confirm_newpwd">确认新密码</string>
+	<string name="tg_layout_rules">用户协议</string>
+	<string name="tg_layout_read_rules">我已阅读用户协议</string>
+	<string name="tg_layout_cancel">取消</string>
+	<string name="tg_layout_confirm">确定</string>
+	<string name="tg_layout_next">下一步</string>
+	<string name="tg_layout_finish">完成</string>
+	<string name="tg_layout_change_nickname_hint">*昵称设置后无法进行修改</string>
+	<string name="tg_layout_invitefriend">邀请好友</string>
+	<string name="tg_layout_notinstalled_friend">未安装的好友</string>
+	<string name="tg_layout_installed_friend">正在玩的好友</string>
+	<string name="tg_layout_selectall">全选</string>
+	<string name="tg_layout_invite">邀请</string>
+	<string name="tg_layout_goto_noticecenter">前往消息中心查看详情 >>></string>
+	<string name="tg_layout_notshow_nexttime">本次活动不再显示</string>
+	<string name="tg_layout_notenough_kb">您的余额不足,购买失败,请先充值K币.</string>
+	<string name="tg_layout_amount_desc">需要K币 : </string>
+	<string name="tg_layout_balance_desc">余额 : </string>
+	<string name="tg_layout_goto_recharge_kb">点击充值K币</string>
+	<string name="tg_layout_orderinfo">订单信息</string>
+	<string name="tg_layout_accountinfo" formatted="false">账号 : %s</string>
+	<string name="tg_layout_balanceinfo" formatted="false">余额 : %d</string>
+	<string name="tg_layout_paymentinfo" formatted="false">您正在购买 %s , 需要 %d K币.</string>
+	<string name="tg_layout_balance" formatted="false">余额 : %d</string>
+	<string name="tg_layout_hide">隐藏</string>
+	<string name="tg_layout_hide_hint">翻一翻可隐藏/显示小图标</string>
+	<string name="tg_layout_hide_check">不再提示</string>
+	<string name="tg_layout_hide_here">拖到此处隐藏</string>
+	<string name="tg_layout_account_login">账号登陆</string>
+	<string name="tg_layout_account_email2">请输入账号/邮箱</string>
+
+
+	<string name="tg_layout_account_registration">账号注册</string>
+
+	<string name="tg_layout_gift_no">暂无礼包</string>
+
+	<string name="tg_layout_to_login">已有账号登陆</string>
+	<string name="tg_layout_load">详情请关注“红狐游戏”官方公众号，更多惊喜等待您，点击即可复制“红狐游戏”，打开微信粘贴至搜索公众号即可关注</string>
+	<string name="tg_layout_copy2">复制</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tg_title_height">60dp</dimen>
+    <dimen name="tg_title_textsize">20sp</dimen>
+    <dimen name="tg_df_title_textsize">18sp</dimen>
+    <dimen name="tg_edittext_textsize">19sp</dimen>
+    <dimen name="tg_land_content_width">400dp</dimen>
+    
+    <dimen name="tg_xlarge_textsize">22sp</dimen>
+    <dimen name="tg_large_textsize">20sp</dimen>
+    <dimen name="tg_normal_textsize">18sp</dimen>
+    <dimen name="tg_snormal_textsize">16sp</dimen>
+    <dimen name="tg_small_textsize">14sp</dimen>
+    
+    <dimen name="tg_hidehint_img_height">160dp</dimen>
+    
+    <dimen name="tg_df_lr_padding">16dp</dimen>
+    <dimen name="tg_af_lr_padding">22dp</dimen>
+    
+    <dimen name="tg_tb_size">64dp</dimen>
+    <dimen name="tg_tb_icon_size">43dp</dimen>
+    <dimen name="tg_tb_redhint_size">10dp</dimen>
+    <dimen name="tg_tb_hint_textsize">10sp</dimen>
+    
+</resources>

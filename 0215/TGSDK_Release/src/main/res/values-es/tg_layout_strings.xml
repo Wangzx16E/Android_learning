@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tg_layout_fast_register_confirm">Inicie sesión y guarde la captura de pantalla</string>
+	<string name="tg_layout_account_registration">Registrar Cuenta</string>
+	<string name="tg_layout_accountinfo">nombre de usuario: %s</string>
+	<string name="tg_layout_fast_register">Resgistro Rápido</string>
+	<string name="tg_layout_rules">Acuerdo de usuario</string>
+	<string name="tg_layout_usercenter">Perfil</string>
+	<string name="tg_layout_supportcenter">Apoyo</string>
+	<string name="tg_layout_changepwd">Cambiar Contraseña</string>
+	<string name="tg_email_blank">No se puede dejar en blanco el correo electrónico</string>
+	<string name="tg_nickname_blank">No se puede dejar en blanco el apodo</string>
+	<string name="tg_layout_mygift">Mi paquete de regalo</string>
+	<string name="tg_layout_setnickname">Configura el apodo</string>
+	<string name="tg_layout_upgrade_title">Cuenta oficial actulizada</string>
+	<string name="tg_layout_upgrade">Cuenta oficial actulizada</string>
+	<string name="tg_layout_upgrade_help">¿Cuáles son los beneficios de actualizar a la cuenta formal de 191game? \n
+1.Seguridad y conveniencia de la gestión de cuentas. \n
+2.Obtener la oportunidad de participar en los actos oficiales por los premios.</string>
+	<string name="tg_layout_nickname_hint">Apodo</string>
+	<string name="tg_layout_email_hint">Email</string>
+	<string name="tg_payment_btn">Recargar</string>
+	<string name="tg_next_btn">Siguiente paso</string>
+	<string name="tg_submit_btn">Presentar</string>
+	<!-- added by sxg -->
+	<string name="tg_layout_read_rules">He leído el acuerdo de usuario</string>
+	<string name="tg_layout_account_email2">Ingrese cuenta / correo electrónico</string>
+	<string name="tg_layout_to_login">Iniciar sesión con una cuenta</string>
+	<string name="tg_layout_findpwd">Recuperar Contraseña</string>
+	<string name="tg_layout_send">Enviar</string>
+	<string name="tg_layout_account_email">Por favor ingrese su email</string>
+	<string name="tg_layout_account_phone">Por favor ingrese el número de teléfono</string>
+	<string name="tg_layout_verification">introduzca el código de verificación</string>
+</resources>

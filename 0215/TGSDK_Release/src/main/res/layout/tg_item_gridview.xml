@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tgcountry"
+        android:layout_width="match_parent"
+        android:text="中国"
+        android:layout_weight="1"
+        android:textColor="@color/vk_black"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+
+        >
+
+    </TextView>
+
+        <TextView
+            android:id="@+id/tgquhao"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/vk_black"
+            android:gravity="right"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="+86"
+            >
+        </TextView>
+
+</LinearLayout>

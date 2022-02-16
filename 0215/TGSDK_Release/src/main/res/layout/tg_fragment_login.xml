@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <include layout="@layout/tg_view_darkback" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo_login" />
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_logintitle"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView> -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tg_findpwd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="@string/tg_layout_findpwd"
+            android:textColor="@color/tg_df_title_btn_color"
+            android:textSize="13sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tg_df_content_background"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/tg_df_lr_padding"
+            android:paddingRight="@dimen/tg_df_lr_padding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/tg_et_container_bg"
+                android:orientation="vertical" >
+
+                <ru.threeguns.ui.views.DropEditTextEx
+                    android:id="@+id/tg_account_et"
+                    style="@style/tg_account_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    tuitui:hint="@string/tg_layout_account_hint"
+                    tuitui:imeActionLabel="@string/tg_layout_next"
+                    tuitui:imeOptions="5"
+                    tuitui:normalIcon="@drawable/tg_eticon_email"
+                    tuitui:selectedIcon="@drawable/tg_eticon_email" >
+                </ru.threeguns.ui.views.DropEditTextEx>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="#FFDDDDDD" />
+
+                <ru.threeguns.ui.views.EditTextEx
+                    android:id="@+id/tg_password_et"
+                    style="@style/tg_secret_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    tuitui:hint="@string/tg_layout_password_hint"
+                    tuitui:imeActionLabel="@string/tg_layout_finish"
+                    tuitui:imeOptions="6"
+                    tuitui:normalIcon="@drawable/tg_eticon_password"
+                    tuitui:selectedIcon="@drawable/tg_eticon_password" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tg_login_btn"
+                style="@style/tg_black_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvBtnRegister"
+                    style="@style/tg_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp"
+                    android:text="@string/tg_layout_register"
+                    android:textSize="@dimen/tg_snormal_textsize" />
+
+                <TextView
+                    android:id="@+id/tg_fastregister_btn"
+                    style="@style/tg_blue_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp"
+                    android:text="@string/tg_layout_fast_register"
+                    android:textSize="@dimen/tg_snormal_textsize" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tg_tplogin_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="#FFDDDDDD" />
+
+            <LinearLayout
+                android:id="@+id/tg_tplogin_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp"
+                    android:text="@string/tg_layout_tplogin_text"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/tg_normal_textsize" />
+
+                <LinearLayout
+                    android:id="@+id/tg_tplogin_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/tg_spinner"
+                style="@android:attr/spinnerDropDownItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:spinnerMode="dropdown" 
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tg_debug_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debug"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

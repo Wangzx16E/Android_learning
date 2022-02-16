@@ -1,0 +1,10 @@
+{
+  "run_config": {
+    "app_id": "80009",
+    "app_key": "e0b234308905821624705cabf3a73e55",
+    "channel_id": "300001",
+    "server_config": "true",
+    "debug": "false",
+    "packageName": "com.game191.warhero"
+  }
+}

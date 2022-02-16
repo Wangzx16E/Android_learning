@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="tg_layout_account">帳號</string>
+	<string name="tg_layout_account_hint">帳號</string>
+	<string name="tg_layout_email_hint">郵箱</string>
+	<string name="tg_layout_nickname_hint">昵稱</string>
+	<string name="tg_layout_vk_nickname_hint">VK昵稱</string>
+	<string name="tg_layout_password">密碼</string>
+	<string name="tg_layout_password_hint">密碼</string>
+	<string name="tg_layout_login">登入</string>
+	<string name="tg_layout_register">註冊</string>
+	<string name="tg_layout_fast_register">快速註冊</string>
+	<string name="tg_layout_fast_register_confirm">登入並保存截圖</string>
+	<string name="tg_layout_tplogin_text">其他管道登入:</string>
+	<string name="tg_layout_logintitle">3Guns</string>
+	<string name="tg_layout_findpwd">找回密碼</string>
+	<string name="tg_layout_showpwd">顯示密碼</string>
+	<string name="tg_layout_exit">帳號登出</string>
+	<string name="tg_layout_giftcenter">領取禮包</string>
+	<string name="tg_layout_supportcenter">客服中心</string>
+	<string name="tg_layout_usercenter">個人中心</string>
+	<string name="tg_layout_switchuser">切換帳號</string>
+	<string name="tg_layout_restorepwd_success_hint">您的密碼修改郵件已經發送到您的郵箱中</string>
+	<string name="tg_layout_upgrade">升級為正式帳號</string>
+	<string name="tg_layout_upgrade_title">升級為正式帳號</string>
+	<string name="tg_layout_upgrade_help">Tips: 3Guns正式帳號的優勢有哪些？\n
+1.帳號管理更加便捷與安全。\n
+2.方便參與官方舉辦的各類有獎活動。</string>
+	<string name="tg_layout_changepwd">修改密碼</string>
+	<string name="tg_layout_feedback">提問</string>
+	<string name="tg_layout_myfeedback">我的提問</string>
+	<string name="tg_layout_notice">訊息中心</string>
+	<string name="tg_layout_noticedetail">通知詳情</string>
+	<string name="tg_layout_fbfans">Facebook粉絲頁</string>
+	<string name="tg_layout_vkfans">VK粉絲頁</string>
+	<string name="tg_layout_wallet">我的錢包</string>
+	<string name="tg_layout_gift">領取禮包</string>
+	<string name="tg_layout_mygift">我的禮包</string>
+	<string name="tg_layout_setnickname">設置昵稱</string>
+	<string name="tg_layout_oripwd">原密碼</string>
+	<string name="tg_layout_newpwd">新密碼</string>
+	<string name="tg_layout_confirm_newpwd">確認新密碼</string>
+	<string name="tg_layout_rules">使用者協定</string>
+	<string name="tg_layout_read_rules">我已閱讀使用者協定</string>
+	<string name="tg_layout_cancel">取消</string>
+	<string name="tg_layout_confirm">確定</string>
+	<string name="tg_layout_next">下一步</string>
+	<string name="tg_layout_finish">完成</string>
+	<string name="tg_layout_change_nickname_hint">*昵稱設定後無法進行修改</string>
+	<string name="tg_layout_invitefriend">邀请好友</string>
+	<string name="tg_layout_notinstalled_friend">未安装的好友</string>
+	<string name="tg_layout_installed_friend">正在玩的好友</string>
+	<string name="tg_layout_selectall">全选</string>
+	<string name="tg_layout_invite">邀请</string>
+	<string name="tg_layout_goto_noticecenter">前往消息中心查看詳情 >>></string>
+	<string name="tg_layout_notshow_nexttime">本次活動不再顯示</string>
+	<string name="tg_layout_notenough_kb">您的餘額不足,購買失敗,請先儲值K幣.</string>
+	<string name="tg_layout_amount_desc">需要K幣 : </string>
+	<string name="tg_layout_balance_desc">餘額 : </string>
+	<string name="tg_layout_goto_recharge_kb">點擊儲值K幣</string>
+	<string name="tg_layout_orderinfo">訂單信息</string>
+	<string name="tg_layout_accountinfo" formatted="false">帳號ID : %s</string>
+	<string name="tg_layout_balanceinfo" formatted="false">餘額 : %d</string>
+	<string name="tg_layout_paymentinfo" formatted="false">您正在購買 %s , 需要 %d K幣.</string>
+	<string name="tg_layout_balance" formatted="false">餘額 : %d</string>
+	<string name="tg_layout_hide">隱蔽</string>
+	<string name="tg_layout_hide_hint">翻一翻可隱蔽/顯示小圖標</string>
+	<string name="tg_layout_hide_check">不再提示</string>
+	<string name="tg_layout_hide_here">拖到此處隱蔽</string>
+
+	<string name="tg_layout_account_login">賬號登錄</string>
+	<string name="tg_layout_account_email2">請輸入賬號/郵箱</string>
+
+
+	<string name="tg_layout_account_registration">賬號注冊</string>
+
+	<string name="tg_layout_gift_no">暫無禮包</string>
+	<string name="tg_layout_to_login">已有賬號登陸</string>
+</resources>

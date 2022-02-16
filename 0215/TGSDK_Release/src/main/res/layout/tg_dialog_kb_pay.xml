@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tg_notice_bg"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+
+            <TextView
+                android:id="@+id/tg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+
+        <include layout="@layout/tg_view_darkexit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tg_df_content_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tg_df_lr_padding"
+        android:paddingRight="@dimen/tg_df_lr_padding" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/tg_et_container_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/tg_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tg_layout_accountinfo"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+
+            <TextView
+                android:id="@+id/tg_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tg_layout_balanceinfo"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/tg_et_container_bg"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/tg_orderinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tg_layout_orderinfo"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+
+            <TextView
+                android:id="@+id/tg_paymentinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_orderinfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/tg_layout_paymentinfo"
+                android:textColor="#666666"
+                android:textSize="@dimen/tg_df_title_textsize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tg_confirm"
+            style="@style/tg_black_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="@string/tg_layout_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

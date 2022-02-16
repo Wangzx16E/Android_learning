@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tg_layout_password">Contraseña</string>
+    <string name="tg_layout_password_hint">Contraseña</string>
+    <string name="tg_layout_account">Nombre de usuario</string>
+    <string name="tg_layout_account_hint">Nombre de usuario</string>
+    <string name="tg_layout_login">Inicio de sesión</string>
+    <string name="tg_layout_exit">Salir</string>
+    <string name="tg_layout_oripwd">Antugua Contraseña</string>
+    <string name="tg_layout_newpwd">Nueva Contraseña</string>
+    <string name="tg_layout_invite">Inivitar</string>
+    <string name="tg_layout_selectall">Seleccionar Todos</string>
+    <string name="tg_layout_installed_friend">Amigos que ya están jugando</string>
+    <string name="tg_layout_notinstalled_friend">Amigos que aún no tienen instalado el juego</string>
+    <string name="tg_layout_invitefriend">Inivitar Amigos</string>
+    <string name="tg_layout_cancel">Cancelar</string>
+    <string name="tg_account_format_incorrect">El formato de la cuenta es incorrecta, debe contener entre 5–16 números o letras</string>
+    <string name="tg_password_format_incorrect">El formato de la cuenta es incorrecta, debe contener entre 5–16 números o letras</string>
+    <string name="tg_account_blank">No se puede dejar en blanco lacuenta</string>
+    <string name="tg_password_blank">No se puede dejar en blanco la contraseña</string>
+    <string name="tg_nickname_format_incorrect">El formato de la cuenta es incorrecta</string>
+    <string name="tg_email_format_incorrect">El formato del correo electrónico es incorrecto</string>
+    <string name="tg_new_password_unmatch">Las contraseñas introducidas no coiciden</string>
+    <string name="tg_new_password_not_change">La contraseña nueva y antigua son parecidas</string>
+    <string name="tg_network_loading_loading">Conectando…</string>
+    <string name="tg_network_loading_login">Iniciando sesión…</string>
+    <string name="tg_network_loading_pay">Tratamiento…</string>
+    <string name="tg_network_loading_register">Registando…</string>
+    <string name="tg_please_accept_agreement">Por favor, acepte el acuerdo de usuario</string>
+    <string name="tg_layout_loginhint">Bienvenido de nuevo!</string>
+    <string name="tg_invite_success">Invitación exitosa</string>
+    <string name="tg_invite_fail">Invitación fallida</string>
+    <string name="vk_send">Enviar</string>
+    <string name="vk_share">Compartimiento</string>
+    <string name="accept">Aceptar</string>
+    <string name="decline">Disminución</string>
+</resources>

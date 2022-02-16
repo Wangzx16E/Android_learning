@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tg_df_background"
+    android:orientation="horizontal" >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/vk_black"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:id="@+id/tg_back"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/tg_left_back"
+            android:layout_height="20dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/tg_mine"
+            android:layout_width="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/tg_left_person"
+            android:layout_height="20dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/tg_feedback"
+            android:layout_width="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/tg_left_question_y"
+            android:layout_height="20dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tg_df_content_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tg_df_lr_padding"
+        android:paddingRight="@dimen/tg_df_lr_padding" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Guest"
+            android:textColor="@color/vk_black"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <ru.threeguns.ui.views.TGWebView
+            android:id="@+id/tg_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layerType="software" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.game191.warhero"
+    android:installLocation="auto"
+    android:versionCode="22"
+    android:versionName="4.0.5">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <!--<uses-permission android:name="com.android.vending.BILLING" />-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--unionpay sdk-->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc.hce"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <!--unionpay sdk END-->
+
+    <!-- google push service -->
+    <permission android:name="com.game191.warhero.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.game191.warhero.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="ru.threeguns.engine.controller.TGApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tgdemo_icon"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity
+            android:name="com.game191.warhero.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <!-- tg sdk -->
+        <activity
+            android:name="ru.threeguns.ui.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="ru.threeguns.ui.AccountActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="ru.threeguns.ui.GuestActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="ru.threeguns.ui.CommonWebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- appsflyer extension -->
+        <!--        <receiver-->
+        <!--            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"-->
+        <!--            android:exported="true" >-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="com.android.vending.INSTALL_REFERRER" />-->
+        <!--            </intent-filter>-->
+        <!--        </receiver>-->
+
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!-- ql tracker -->
+        <receiver
+            android:name="ru.threeguns.engine.tracker.QLReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- google -->
+        <activity android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" />
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <!-- facebook extension -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/facebook_app_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!--  UNION PAY  -->
+        <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+    </application>
+    <queries>
+        <package android:name="com.facebook.katana" />
+    </queries>
+</manifest>

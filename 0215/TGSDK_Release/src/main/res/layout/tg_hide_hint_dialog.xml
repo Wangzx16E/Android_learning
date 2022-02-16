@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:text="@string/tg_layout_hide_hint"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/tg_hide_hint_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_hidehint_img_height"
+        android:background="#ff000000"
+        android:src="@drawable/tg_hide_hint_gif" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp" >
+
+        <CheckBox
+            android:id="@+id/tg_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/tg_checkbox" />
+
+        <TextView
+            android:id="@+id/tg_checkbox_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tg_checkbox"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tg_checkbox"
+            android:text="@string/tg_layout_hide_check"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tg_df_title_textsize" />
+        <!-- android:textColor="@color/tg_df_common_textcolor" -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tg_hide_hint_cancel"
+            style="@style/tg_black_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/tg_layout_cancel" />
+
+        <TextView
+            android:id="@+id/tg_hide_hint_sure"
+            style="@style/tg_black_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/tg_layout_hide" />
+    </LinearLayout>
+
+</LinearLayout>

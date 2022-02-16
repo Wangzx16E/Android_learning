@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tg_payment_btn">儲值</string>
+    <string name="tg_next_btn">下一步</string>
+    <string name="tg_submit_btn">確定</string>
+</resources>

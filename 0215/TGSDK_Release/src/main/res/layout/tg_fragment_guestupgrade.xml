@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tuitui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tg_df_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tg_title_height"
+        android:background="@color/tg_df_title_background" >
+
+        <include layout="@layout/tg_view_darkback" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tg_small_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:text="@string/tg_layout_upgrade_title"
+                android:textColor="@color/tg_df_title_color"
+                android:textSize="@dimen/tg_df_title_textsize" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tg_af_lr_padding"
+        android:layout_marginRight="@dimen/tg_af_lr_padding"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/tg_et_container_bg"
+        android:orientation="vertical" >
+
+        <ru.threeguns.ui.views.EditTextEx
+            android:id="@+id/tg_account_et"
+            style="@style/tg_account_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            tuitui:hint="@string/tg_layout_email_hint"
+            tuitui:imeActionLabel="@string/tg_layout_next"
+            tuitui:imeOptions="5"
+            tuitui:normalIcon="@drawable/tg_eticon_email"
+            tuitui:selectedIcon="@drawable/tg_eticon_email" />
+
+        <View
+            android:id="@+id/tg_tplogin_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="#FFDDDDDD" />
+
+        <ru.threeguns.ui.views.EditTextEx
+            android:id="@+id/tg_password_et"
+            style="@style/tg_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            tuitui:hint="@string/tg_layout_password_hint"
+            tuitui:imeActionLabel="@string/tg_layout_finish"
+            tuitui:imeOptions="6"
+            tuitui:normalIcon="@drawable/tg_eticon_password"
+            tuitui:selectedIcon="@drawable/tg_eticon_password" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tg_confirm_btn"
+        style="@style/tg_black_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/tg_af_lr_padding"
+        android:layout_marginRight="@dimen/tg_af_lr_padding"
+        android:layout_marginTop="@dimen/tg_af_lr_padding"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="@string/tg_layout_confirm" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tg_af_lr_padding"
+        android:layout_marginRight="@dimen/tg_af_lr_padding"
+        android:layout_marginTop="32dp"
+        android:gravity="center|left"
+        android:textColor="#666666"
+        android:textSize="@dimen/tg_normal_textsize"
+        android:text="@string/tg_layout_upgrade_help" />
+
+</LinearLayout>

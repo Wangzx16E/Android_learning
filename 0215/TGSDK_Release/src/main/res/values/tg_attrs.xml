@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextEx">
+        <attr name="hint" format="string"></attr>
+        <attr name="inputType" format="integer"></attr>
+        <attr name="imeOptions" format="integer"></attr>
+        <attr name="imeActionLabel" format="string"></attr>
+        <attr name="digits" format="string"></attr>
+        <attr name="maxLength" format="integer"></attr>
+        <attr name="normalIcon" format="string"></attr>
+        <attr name="selectedIcon" format="string"></attr>
+        <attr name="iconRightMargin" format="integer"></attr>
+    </declare-styleable>
+</resources>

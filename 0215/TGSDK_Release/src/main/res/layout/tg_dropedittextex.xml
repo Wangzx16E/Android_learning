@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/tg_edittextex_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="12dp"
+        android:scaleType="center" />
+
+    <EditText
+        android:id="@+id/tg_edittextex_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="56dp"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:cursorVisible="true" />
+
+    <ImageView
+        android:id="@+id/tg_edittextex_clear_btn"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="34dp"
+        android:src="@drawable/tg_clear_icon"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/tg_edittextex_alert_img"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="34dp"
+        android:src="@drawable/tg_alert_icon"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/tg_drop_btn"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/tg_arrow_down"
+        android:visibility="visible" />
+
+</FrameLayout>

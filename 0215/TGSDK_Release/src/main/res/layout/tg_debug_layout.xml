@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#22FFFFFF"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/tt_debug_loglist"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/tt_debug_menu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tt_debug_log_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tg_blackbtn"
+            android:gravity="center"
+            android:text="LOG" />
+        <TextView
+            android:id="@+id/tt_debug_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tg_blackbtn"
+            android:gravity="center"
+            android:text="Version" />
+    </LinearLayout>
+
+</LinearLayout>

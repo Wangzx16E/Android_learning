@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/0215.iml" filepath="$PROJECT_DIR$/.idea/modules/0215.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SDKDemo/0215.SDKDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/SDKDemo/0215.SDKDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TGSDK_Release/0215.TGSDK_Release.iml" filepath="$PROJECT_DIR$/.idea/modules/TGSDK_Release/0215.TGSDK_Release.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.threeguns.ui.views.LayoutButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tg_exit_btn"
+    android:layout_width="@dimen/tg_title_height"
+    android:layout_height="@dimen/tg_title_height"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/tg_whitebtn" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/tg_blackexit" />
+
+</ru.threeguns.ui.views.LayoutButton>
